@@ -78,7 +78,8 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-
+define('JWT_AUTH_SECRET_KEY', '~x]0]utiGYm).W:Ir!QA/u7SD1PjQ&O45Kg39/h1}b@uZ<IS7.0=LO]/,9Rjcf~~');
+define('JWT_AUTH_CORS_ENABLE', true);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
