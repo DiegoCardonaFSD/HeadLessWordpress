@@ -161,9 +161,9 @@ add_action( 'rest_api_init', function () {
 
 
   function handle_interview_add($data){
-    $config = array('interviewer' => 'field_5ce875b11a9e2','candidate' => 'field_5ce8762d8b358'
-                  ,'date' => 'field_5ce8763d8b359','meetinglink' => 'field_5ce876718b35a'
-                  ,'rate' => 'field_5ce8768c8b35b','status' => 'field_5ce876958b35c');
+    $config = array('interviewer' => 'field_5ceb5362f08a0','candidate' => 'field_5ceb5380f08a1'
+                  ,'date' => 'field_5ceb539cf08a2','meetinglink' => 'field_5ceb53a0f08a3'
+                  ,'rate' => 'field_5ceb53acf08a4','status' => 'field_5ceb53b2f08a5');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
@@ -176,9 +176,9 @@ add_action( 'rest_api_init', function () {
   }
 
   function handle_interview_update($data){
-    $config = array('interviewer' => 'field_5ce875b11a9e2','candidate' => 'field_5ce8762d8b358'
-                  ,'date' => 'field_5ce8763d8b359','meetinglink' => 'field_5ce876718b35a'
-                  ,'rate' => 'field_5ce8768c8b35b','status' => 'field_5ce876958b35c');
+    $config = array('interviewer' => 'field_5ceb5362f08a0','candidate' => 'field_5ceb5380f08a1'
+                  ,'date' => 'field_5ceb539cf08a2','meetinglink' => 'field_5ceb53a0f08a3'
+                  ,'rate' => 'field_5ceb53acf08a4','status' => 'field_5ceb53b2f08a5');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
@@ -192,9 +192,9 @@ add_action( 'rest_api_init', function () {
   }
 
   function handle_candidate_add($data){
-    $config = array('name' => 'field_5ce877020d3e5','lastname' => 'field_5ce8712eaabcc'
-                  ,'email' => 'field_5ce87143aabcd','phonenumber' => 'field_5ce87148aabce'
-                  ,'position' => 'field_5ce87153aabcf');
+    $config = array('name' => 'field_5ceb52a084e52','lastname' => 'field_5ceb52ad84e53'
+                  ,'email' => 'field_5ceb52b884e54','phonenumber' => 'field_5ceb52c384e55'
+                  ,'position' => 'field_5ceb52cc84e56');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
@@ -203,13 +203,13 @@ add_action( 'rest_api_init', function () {
         add_post_meta($post_id, '_'.$key, $config[$key]);
       }
     }
-    return array('status' => 'success');
+    return array('status' => 'success', 'data' => $data, 'config' => $config);
   }
 
   function handle_candidate_update($data){
-    $config = array('name' => 'field_5ce877020d3e5','lastname' => 'field_5ce8712eaabcc'
-                  ,'email' => 'field_5ce87143aabcd','phonenumber' => 'field_5ce87148aabce'
-                  ,'position' => 'field_5ce87153aabcf');
+    $config = array('name' => 'field_5ceb52a084e52','lastname' => 'field_5ceb52ad84e53'
+                  ,'email' => 'field_5ceb52b884e54','phonenumber' => 'field_5ceb52c384e55'
+                  ,'position' => 'field_5ceb52cc84e56');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
@@ -219,13 +219,13 @@ add_action( 'rest_api_init', function () {
       }
     }
     
-    return array('status' => 'success');
+    return array('status' => 'success', 'data' => $data, 'config' => $config);
   }
 
   function handle_interviewer_add($data){
-    $config = array('name' => 'field_5ce87713668b9','lastname' => 'field_5ce873fa47b8f'
-                  ,'email' => 'field_5ce8740347b90','phonenumber' => 'field_5ce8740d47b91'
-                  ,'technologies_evaluated' => 'field_5ce8741647b92');
+    $config = array('name' => 'field_5ceb530ddaceb','lastname' => 'field_5ceb5314dacec'
+                  ,'email' => 'field_5ceb531cdaced','phonenumber' => 'field_5ceb5321dacee'
+                  ,'technologies_evaluated' => 'field_5ceb532ddacef');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
@@ -238,9 +238,9 @@ add_action( 'rest_api_init', function () {
   }
 
   function handle_interviewer_update($data){
-    $config = array('name' => 'field_5ce87713668b9','lastname' => 'field_5ce873fa47b8f'
-                  ,'email' => 'field_5ce8740347b90','phonenumber' => 'field_5ce8740d47b91'
-                  ,'technologies_evaluated' => 'field_5ce8741647b92');
+    $config = array('name' => 'field_5ceb530ddaceb','lastname' => 'field_5ceb5314dacec'
+                  ,'email' => 'field_5ceb531cdaced','phonenumber' => 'field_5ceb5321dacee'
+                  ,'technologies_evaluated' => 'field_5ceb532ddacef');
     $data = json_decode($data->get_body(), true);
     $post_id = $data['id'];
     foreach ($data as $key => $value) {
