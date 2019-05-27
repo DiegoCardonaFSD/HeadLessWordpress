@@ -30,11 +30,19 @@ It's this case, I'm using Wordpress only to manage your data and expose these th
 - **Dev**: npm run serve
 - **PDN**: npm run build
 
+## LINKS TO TEST
+**FRONT** [http://frontwpheadlessv1.thedeveloper.co
+](http://frontwpheadlessv1.thedeveloper.co)
+**BACK** [http://wpheadlessv1.thedeveloper.co/
+](http://wpheadlessv1.thedeveloper.co/)
+
 ## REPOS
+In this moment I will sharing with you two urls with the live website, I deployed this app in AWS EC2 micro machine, with LAMP stack server, additionaly I configured two subdomains for this.
+
 - **FRONT** [https://github.com/DiegoCardonaFSD/frontwpheadlessv1
-](https://github.com/DiegoCardonaFSD/frontwpheadlessv1)
+](https://github.com/DiegoCardonaFSD/frontwpheadlessv1){:target="_blank"}
 - **BACK**  [https://github.com/DiegoCardonaFSD/HeadLessWordpress
-](https://github.com/DiegoCardonaFSD/HeadLessWordpress)
+](https://github.com/DiegoCardonaFSD/HeadLessWordpress){:target="_blank"}
 
 ## Note: 
 Remembered this is a beta version!
